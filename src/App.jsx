@@ -1,14 +1,18 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import HomePage from "./pages/HomePage";
+import EventsPage from "./pages/EventsPage";
+import SingleEventPage from "./pages/SingleEventPage";
 
-function App() {
+export default function App() {
   return (
     <>
-      <h1>Events</h1>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/events" element={<EventsPage />} />
+        <Route path="/events/:eventname" element={<SingleEventPage />} />
+      </Routes>
     </>
   );
 }
-
-export default App;
