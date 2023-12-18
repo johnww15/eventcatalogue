@@ -20,6 +20,8 @@ export default function HomePage() {
   return (
     <div>
       <h1>This is the home page</h1>
+      <button>Create Event</button>
+      <hr />
       {events.map((event) => (
         <EventImage
           id={event.id}

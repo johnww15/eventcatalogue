@@ -10,7 +10,7 @@ export default function EventImage({ id, src, name, date, time }) {
       </Link>
       <p>{name}</p>
       <p>
-        {date} - {time}
+        {date} | {time}
       </p>
     </div>
   );

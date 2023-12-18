@@ -11,7 +11,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/events" element={<EventsPage />} />
-        <Route path="/events/:eventname" element={<SingleEventPage />} />
+        <Route path="/events/:eventName" element={<SingleEventPage />} />
       </Routes>
     </>
   );
