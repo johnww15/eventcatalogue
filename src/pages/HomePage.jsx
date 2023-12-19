@@ -8,7 +8,7 @@ export default function HomePage() {
   useEffect(() => {
     async function fetchEvents() {
       const response = await fetch(
-        "https://app.ticketmaster.com/discovery/v2/events.json?apikey=a4x60AAIj63BSvIS5w6vzKG4loo9Kdjs"
+        "https://app.ticketmaster.com/discovery/v2/events.json?apikey=a4x60AAIj63BSvIS5w6vzKG4loo9Kdjs&size=50"
       );
       const events = await response.json();
       console.log("innerarray", events._embedded.events);
@@ -20,7 +20,9 @@ export default function HomePage() {
   return (
     <div>
       <h1>This is the home page</h1>
-      <button>Create Event</button>
+      <button>
+        <Link to="/createEvent">Create Event</Link>
+      </button>
       <hr />
       {events.map((event) => (
         <EventImage
