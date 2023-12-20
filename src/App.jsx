@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import { useState, useEffect } from "react";
 import "./App.css";
 import HomePage from "./pages/HomePage";
 import EventsPage from "./pages/EventsPage";
@@ -7,8 +8,11 @@ import FormPage from "./pages/FormPage";
 import SportsPage from "./pages/SportsPage";
 import MusicPage from "./pages/MusicPage";
 import NavBar from "./components/NavBar";
+import FavouritesPage from "./pages/FavouritesPage";
 
 export default function App() {
+  const [favourites, setFavourites] = useState(null);
+
   return (
     <>
       <div className="app">
@@ -18,10 +22,27 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/events" element={<EventsPage />} />
-        <Route path="/events/:eventName" element={<SingleEventPage />} />
+        <Route
+          path="/events/:eventName"
+          element={
+            <SingleEventPage
+              favourites={favourites}
+              setFavourites={setFavourites}
+            />
+          }
+        />
         <Route path="/sports" element={<SportsPage />} />
         <Route path="/music" element={<MusicPage />} />
         <Route path="/createEvent" element={<FormPage />} />
+        <Route
+          path="/favourites"
+          element={
+            <FavouritesPage
+              favourites={favourites}
+              setFavourites={setFavourites}
+            />
+          }
+        />
       </Routes>
     </>
   );
