@@ -16,7 +16,7 @@ export default function FavouritesPage({ favourites, setFavourites }) {
         },
       });
       const data = await response.json();
-      setFavourites(data);
+      setFavourites(data.records);
     })();
   }, []);
 
@@ -30,7 +30,7 @@ export default function FavouritesPage({ favourites, setFavourites }) {
   return (
     <div>
       <h2>This is the favourites page</h2>
-      {favourites.records.map((favourite) => (
+      {favourites?.map((favourite) => (
         <FavouritesImage
           id={favourite.fields.id}
           key={favourite.fields.id}
@@ -38,6 +38,9 @@ export default function FavouritesPage({ favourites, setFavourites }) {
           name={favourite.fields.name}
           date={favourite.fields.date}
           time={favourite.fields.time}
+          airtableId={favourite.id}
+          setFavourites={setFavourites}
+          favourites={favourites}
         />
       ))}
     </div>

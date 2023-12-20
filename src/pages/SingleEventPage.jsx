@@ -1,7 +1,11 @@
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-export default function SingleEventPage({ favourites }) {
+export default function SingleEventPage({
+  favourites,
+  setFavourites,
+  isFavourites,
+}) {
   const params = useParams();
   const eventId = params.eventName;
   const [eventDetails, setEventDetails] = useState(null);
@@ -25,6 +29,10 @@ export default function SingleEventPage({ favourites }) {
 
   const addFavourite = async (event) => {
     event.preventDefault();
+    console.log("eventId", eventId);
+    if (isFavourites(eventId)) {
+      return;
+    }
     const data = {
       fields: {
         id: eventId,
@@ -45,6 +53,7 @@ export default function SingleEventPage({ favourites }) {
       body: JSON.stringify(data),
     });
     const jsonData = await response.json();
+    console.log("jsonData", jsonData);
     return setFavourites([...favourites, jsonData]);
   };
   //---------------//

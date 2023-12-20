@@ -11,7 +11,11 @@ import NavBar from "./components/NavBar";
 import FavouritesPage from "./pages/FavouritesPage";
 
 export default function App() {
-  const [favourites, setFavourites] = useState(null);
+  const [favourites, setFavourites] = useState([]);
+
+  function isFavourites(id) {
+    return favourites.some((records) => records.fields.id === id);
+  }
 
   return (
     <>
@@ -28,6 +32,7 @@ export default function App() {
             <SingleEventPage
               favourites={favourites}
               setFavourites={setFavourites}
+              isFavourites={isFavourites}
             />
           }
         />
