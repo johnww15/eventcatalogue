@@ -22,7 +22,6 @@ export default function SportsPage() {
 
   return (
     <div>
-      <h2>This is the sports page</h2>
       {sports.map((sport) => (
         <EventImage
           id={sport.id}

@@ -32,15 +32,21 @@ export default function FavouritesImage({
   };
 
   return (
-    <div>
+    <div className="eventimage">
       <Link to={path}>
         <img src={`${src}`} width="200"></img>
       </Link>
-      <p>{name}</p>
-      <p>
-        {date} | {time}
-      </p>
-      <button onClick={handleDelete}>Remove from favourites</button>
+      <div className="eventname">
+        <p>{name}</p>
+      </div>
+      <div className="datetime">
+        <p>
+          {date} | {time}
+        </p>
+      </div>
+      <button className="favouritebutton" onClick={handleDelete}>
+        Remove from favourites
+      </button>
     </div>
   );
 }

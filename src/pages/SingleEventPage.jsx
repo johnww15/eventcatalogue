@@ -63,18 +63,24 @@ export default function SingleEventPage({
   }
 
   return (
-    <div>
-      <h1>{eventDetails.name}</h1>
-      <h2>{eventDetails._embedded.venues[0].name}</h2>
-      <h2>
-        {eventDetails.dates.start.localDate} |{" "}
-        {eventDetails.dates.start.localTime}
-      </h2>
-      <img src={eventDetails.images[0].url} width="400"></img>
-      <br />
-      <button onClick={addFavourite}>Add to Favourites</button>
+    <div className="singleeventpage">
+      <div className="event-details">
+        <h1>{eventDetails.name}</h1>
+        <h2>{eventDetails._embedded.venues[0].name}</h2>
+        <h2>
+          {eventDetails.dates.start.localDate} |{" "}
+          {eventDetails.dates.start.localTime}
+        </h2>
+        <img src={eventDetails.images[0].url} width="400"></img>
+        <br />
+      </div>
+      <button className="addfavouritebutton" onClick={addFavourite}>
+        Add to Favourites
+      </button>
       <hr />
-      <Link to="/">Back to home</Link>
+      <Link className="backtohome" to="/">
+        Back to home
+      </Link>
     </div>
   );
 }

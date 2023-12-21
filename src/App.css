@@ -1,6 +1,11 @@
+.app {
+  font-family: Verdana, Geneva,sans-serif;
+}
+
 /* navbar */
 nav {
   margin-bottom: 50px;
+  height: 30px;
   background-color: rgb(28, 153, 153);
 }
 
@@ -13,45 +18,90 @@ ul {
   border: solid;
 }
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+nav a {
+  display: block;
+  color: black;
   text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+nav a:hover {
+  background-color: #758cff;
+  color: black;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav a.active {
+  background-color: #1050f1;
+  color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* single event */
+.eventimage {
+  display: flex;
+   border: 1px solid #ccc;
+   margin: auto;
+   text-align: center;
+   justify-content: space-between;
+   padding: 10px;
 }
 
-.card {
-  padding: 2em;
+.eventname{
+  margin: auto;
 }
 
-.read-the-docs {
-  color: #888;
+.datetime{
+  margin: auto;
+}
+
+.favouritebutton {
+  background-color: #ff5555;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.favouritebutton:active {
+  background-color: #e54444;
+}
+
+/* -------- */
+
+.singleeventpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.event-details {
+  margin-bottom: 20px;
+}
+
+.event-details img {
+  margin-top: 20px;
+}
+
+.addfavouritebutton {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.addfavouritebutton:active {
+  background-color: #45a049;
+}
+
+
+.backtohome {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
 }

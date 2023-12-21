@@ -36,7 +36,7 @@ export default function App() {
   return (
     <>
       <div className="app">
-        <h1>Events</h1>
+        <h1>Ticketmaster Events</h1>
       </div>
       <NavBar />
       <Routes>

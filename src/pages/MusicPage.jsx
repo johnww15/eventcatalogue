@@ -22,7 +22,6 @@ export default function MusicPage() {
 
   return (
     <div>
-      <h2>This is the music page</h2>
       {music.map((music) => (
         <EventImage
           id={music.id}

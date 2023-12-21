@@ -11,7 +11,6 @@ export default function FavouritesPage({ favourites, setFavourites }) {
 
   return (
     <div>
-      <h2>This is the favourites page</h2>
       {favourites?.map((favourite) => (
         <FavouritesImage
           id={favourite.fields.id}
