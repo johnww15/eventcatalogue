@@ -26,10 +26,9 @@ export default function FavouritesImage({
       },
     });
     const jsonData = await response.json();
-    setFavourites((favourites) => ({
-      records: favourites?.filter((f) => f.id !== jsonData?.id),
-    }));
-    //* update state in react
+    setFavourites((favourites) =>
+      favourites?.filter((f) => f.id !== jsonData?.id)
+    );
   };
 
   return (
