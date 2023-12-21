@@ -53,7 +53,6 @@ export default function SingleEventPage({
       body: JSON.stringify(data),
     });
     const jsonData = await response.json();
-    console.log("jsonData", jsonData);
     return setFavourites([...favourites, jsonData]);
   };
   //---------------//
@@ -72,6 +71,7 @@ export default function SingleEventPage({
         {eventDetails.dates.start.localTime}
       </h2>
       <img src={eventDetails.images[0].url} width="400"></img>
+      <br />
       <button onClick={addFavourite}>Add to Favourites</button>
       <hr />
       <Link to="/">Back to home</Link>
