@@ -28,8 +28,7 @@ export default function MusicPage() {
           key={music.id}
           src={music.images[0].url}
           name={music.name}
-          date={music.dates.start.localDate}
-          time={music.dates.start.localTime}
+          date={music.dates.start.dateTime}
         />
       ))}
     </div>

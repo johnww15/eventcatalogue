@@ -18,7 +18,6 @@ export default function FavouritesPage({ favourites, setFavourites }) {
           src={favourite.fields.src}
           name={favourite.fields.name}
           date={favourite.fields.date}
-          time={favourite.fields.time}
           airtableId={favourite.id}
           setFavourites={setFavourites}
           favourites={favourites}

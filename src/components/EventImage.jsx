@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
-export default function EventImage({ id, src, name, date, time }) {
+export default function EventImage({ id, src, name, date }) {
   const path = `/events/${id}`;
 
   return (
     <div className="eventimage">
       <div className="singleimage">
         <Link to={path}>
-          <img src={`${src}`} width="200"></img>
+          <img src={`${src}`} width="200" height="120"></img>
         </Link>
       </div>
       <div className="eventname">
@@ -15,9 +15,7 @@ export default function EventImage({ id, src, name, date, time }) {
       </div>
       <br />
       <div className="datetime">
-        <p>
-          {date} | {time}
-        </p>
+        <p>{new Date(date).toString()}</p>
       </div>
     </div>
   );

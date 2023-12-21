@@ -25,8 +25,7 @@ export default function HomePage() {
           key={event.id}
           src={event.images[0].url}
           name={event.name}
-          date={event.dates.start.localDate}
-          time={event.dates.start.localTime}
+          date={event.dates.start.dateTime}
         />
       ))}
     </div>

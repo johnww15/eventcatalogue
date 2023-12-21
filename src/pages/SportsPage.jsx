@@ -28,8 +28,7 @@ export default function SportsPage() {
           key={sport.id}
           src={sport.images[0].url}
           name={sport.name}
-          date={sport.dates.start.localDate}
-          time={sport.dates.start.localTime}
+          date={sport.dates.start.dateTime}
         />
       ))}
     </div>

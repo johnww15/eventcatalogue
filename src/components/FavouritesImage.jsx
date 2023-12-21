@@ -6,7 +6,6 @@ export default function FavouritesImage({
   src,
   name,
   date,
-  time,
   airtableId,
   setFavourites,
   favourites,
@@ -34,15 +33,13 @@ export default function FavouritesImage({
   return (
     <div className="eventimage">
       <Link to={path}>
-        <img src={`${src}`} width="200"></img>
+        <img src={`${src}`} width="200" height="120"></img>
       </Link>
       <div className="eventname">
         <p>{name}</p>
       </div>
       <div className="datetime">
-        <p>
-          {date} | {time}
-        </p>
+        <p>{new Date(date).toString()}</p>
       </div>
       <button className="favouritebutton" onClick={handleDelete}>
         Remove from favourites

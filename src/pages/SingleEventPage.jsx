@@ -38,8 +38,7 @@ export default function SingleEventPage({
         id: eventId,
         src: eventDetails.images[0].url,
         name: eventDetails.name,
-        date: eventDetails.dates.start.localDate,
-        time: eventDetails.dates.start.localTime,
+        date: eventDetails.dates.start.dateTime,
         favourite: "true",
       },
     };
@@ -67,11 +66,8 @@ export default function SingleEventPage({
       <div className="event-details">
         <h1>{eventDetails.name}</h1>
         <h2>{eventDetails._embedded.venues[0].name}</h2>
-        <h2>
-          {eventDetails.dates.start.localDate} |{" "}
-          {eventDetails.dates.start.localTime}
-        </h2>
-        <img src={eventDetails.images[0].url} width="400"></img>
+        <h2>{new Date(eventDetails.dates.start.dateTime).toString()}</h2>
+        <img src={eventDetails.images[0].url} width="400" height="auto"></img>
         <br />
       </div>
       <button className="addfavouritebutton" onClick={addFavourite}>
