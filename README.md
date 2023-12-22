@@ -1,19 +1,29 @@
-# React + Vite
+## Project Brief
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**MVP - Minimum Viable Product**
 
-Currently, two official plugins are available:
+- **Build a work react app using 3rd part API and Airtable**
+- **Use React framework to build an application with at least**
+- 5 components
+- 4 props
+- 2 useStates
+- 1 lifting state, which is used to implement CRUD on the client side
+- **Deployed on Vercel**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
 
-Ticketmaster
-Application Name : jonqww-App
-Consumer Key : a4x60AAIj63BSvIS5w6vzKG4loo9Kdjs
-Consumer Secret : GyywYL8zbTApF00C
-5000 requests per day
-100 requests per minute
+Utilising the public API from Ticketmaster, built a minimalistic website which allow the user to browse through upcoming events, add and remove specific events from a list of their favourites
 
-Airtable
-Token : patrKk0ESo0Sua1r5.f10c8d4099609c9c648421754da481ece04b8b1b3bc3d7cebc0cb6e5a96ad5e6
-// https://api.airtable.com/v0/appt1pw0Q5y2woB87/Table%201 \
+## Technology Used
+
+````
+- React
+- Vercel
+- Airtable
+```
+
+## Wireframes
+
+````
+
+![Resources] ()
