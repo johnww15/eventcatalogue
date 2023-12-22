@@ -10,7 +10,7 @@
 - 4 props
 - 2 useStates
 - 1 lifting state, which is used to implement CRUD on the client side
-- **Deployed on Vercel**
+- **Deployed on Vercel** (https://eventcatalogue.vercel.app/)
 
 <br>
 
