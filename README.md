@@ -22,19 +22,17 @@ Utilising the public API from Ticketmaster, built a minimalistic website which a
 
 ## Technology Used
 
-````
 - React
 - Vercel
 - Airtable
-```
+
+<br>
 
 ## Wireframes
 
-````
-
 For my wireframe, I created a quick diagram to show the skeleton of the project:
 
-![Resources] (https://github.com/johnww15/eventcatalogue/blob/main/resources/Wireframe.png?raw=true)
+![Wireframe.js file] (https://github.com/johnww15/eventcatalogue/blob/main/resources/Wireframe.png?raw=true)
 
 <br>
 
