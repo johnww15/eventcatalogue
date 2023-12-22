@@ -26,4 +26,10 @@ Utilising the public API from Ticketmaster, built a minimalistic website which a
 
 ````
 
-![Resources] ()
+For my wireframe, I created a quick diagram to show the skeleton of the project:
+
+![Resources] (https://github.com/johnww15/eventcatalogue/blob/main/resources/Wireframe.png?raw=true)
+
+## User Stories
+
+![User Story 1] ()
