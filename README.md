@@ -32,15 +32,15 @@ Utilising the public API from Ticketmaster, built a minimalistic website which a
 
 For my wireframe, I created a quick diagram to show the skeleton of the project:
 
-![Wireframe.js file] (https://github.com/johnww15/eventcatalogue/blob/main/resources/Wireframe.png?raw=true)
+![Wireframe.js file](https://github.com/johnww15/eventcatalogue/blob/main/resources/Wireframe.png?raw=true)
 
 <br>
 
 ## User Stories
 
-![Wireframe.js file] (https://github.com/johnww15/eventcatalogue/blob/main/resources/FavourtesUserStory.png?raw=true)
-![UserStory1.js file] (https://github.com/johnww15/eventcatalogue/blob/main/resources/UserStory1.png?raw=true)
-![UserStory2.js file] (https://github.com/johnww15/eventcatalogue/blob/main/resources/UserStory2.png?raw=true)
+![UserStory1.js file](https://github.com/johnww15/eventcatalogue/blob/main/resources/FavourtesUserStory.png?raw=true)
+![UserStory2.js file](https://github.com/johnww15/eventcatalogue/blob/main/resources/UserStory1.png?raw=true)
+![UserStory3.js file](https://github.com/johnww15/eventcatalogue/blob/main/resources/UserStory2.png?raw=true)
 
 <br>
 
